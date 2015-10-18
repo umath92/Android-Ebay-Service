@@ -1,3 +1,3 @@
 # Android-Ebay-Service
 
-An app which has used ebay API and has all searching functionalities wth different serarch constraints. It also inculdes the Fb API when allows users to share the ebay product on their fb wall.
+This is an app which uses ebay APIs. It has advanced search filtering capabilities. It also includes a Fb API which allows users to share an ebay product on their fb wall.
