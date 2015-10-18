@@ -1,0 +1,533 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mycompany.ebayservice.ResultActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:id="@+id/scrollView">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLay4outResult"
+            android:layout_alignTop="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/scrollView"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/item3Pic"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:id="@+id/ite1mPic2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="The above text"
+                android:id="@+id/it4emTitle"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemPic"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:text="The Below text"
+                android:id="@+id/itemP5rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#2f4f4f"
+                android:layout_below="@+id/itemTitle"
+                />
+            <TextView
+                android:text="The Below below text"
+                android:id="@+id/pla6ceHold"
+                android:textColor="#808080"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@+id/itemPrice"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/topRa1tedPic"
+                android:layout_marginTop="29dp"
+
+                android:layout_below="@+id/itemPrice" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Now"
+                android:id="@+id/buyN2owButton"
+                android:textStyle="bold"
+                android:background="#E8E8E8"
+                android:layout_alignBottom="@+id/topRatedPic"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/face3bookPic"
+                android:layout_alignBottom="@+id/buyNowButton"
+                android:layout_alignRight="@+id/shippingInfoButton"
+                 />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BASIC INFO"
+                android:id="@+id/bas4icInfoButton"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="#A0A3A3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/topRatedPic"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELLER"
+                android:background="#E8E8E8"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:id="@+id/selle1rInfoButton"
+                android:layout_below="@id/buyNowButton"
+                android:layout_toRightOf="@id/basicInfoButton"
+                android:layout_centerHorizontal="true"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHIPPING"
+                android:background="#E8E8E8"
+                android:id="@+id/sh2ippingInfoButton"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/buyNowButton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bas9icInfoRelativeArray"
+                android:layout_below="@+id/basicInfoButton"
+                android:layout_marginTop="38dp"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:text="Category Name"
+                    android:id="@+id/1234catName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp" />
+
+                <TextView
+                    android:text=""
+                    android:id="@+id/431catNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/catName"
+                    android:layout_marginLeft="50dp"
+
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Condition"
+                    android:id="@+id/6condition"
+                    android:layout_below="@+id/catName"
+                    android:layout_alignLeft="@+id/catName"
+                    android:layout_alignStart="@+id/catName"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:textSize="16sp"
+                    android:id="@+id/ssAAconditionValue"
+                    android:layout_alignTop="@+id/condition"
+                    android:layout_alignLeft="@+id/catNameValue"
+                    android:layout_alignStart="@+id/catNameValue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BuyingFormat"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/XXXbuyingFormat"
+                    android:layout_below="@+id/condition"
+                    android:layout_alignLeft="@+id/condition"
+                    android:layout_alignStart="@+id/condition"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:textSize="16sp"
+                    android:id="@+id/DDDbuyingFormatValue"
+                    android:layout_alignTop="@+id/buyingFormat"
+                    android:layout_alignLeft="@+id/conditionValue"
+                    android:layout_alignStart="@+id/conditionValue" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AAAsellerInfoRelativeArray"
+                android:layout_below="@+id/basicInfoButton"
+                android:layout_marginTop="38dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:text="User Name"
+                    android:id="@+id/@@@userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp" />
+
+                <TextView
+                    android:text=""
+                    android:id="@+id/EEEuserNameValue"
+
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/userName"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback Score"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/fFFFfeedback"
+                    android:layout_below="@+id/userName"
+                    android:layout_alignLeft="@+id/userName"
+                    android:layout_alignStart="@+id/userName"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASDKASDJKLAS"
+
+                    android:textSize="16sp"
+                    android:id="@+id/MMMfeedbackValue"
+                    android:layout_alignTop="@+id/feedback"
+                    android:layout_alignLeft="@+id/userNameValue"
+                    android:layout_alignStart="@+id/userNameValue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Positive Feedback"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/LLLpositiveFeedback"
+                    android:layout_below="@+id/feedback"
+                    android:layout_alignLeft="@+id/feedback"
+                    android:layout_alignStart="@+id/feedback"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZCMZXCM"
+
+                    android:textSize="16sp"
+                    android:id="@+id/PPPpositiveFeedbackValue"
+                    android:layout_alignTop="@+id/positiveFeedback"
+                    android:layout_alignLeft="@+id/feedbackValue"
+                    android:layout_alignStart="@+id/feedbackValue" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback Rating"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/f111eedbackRating"
+                    android:layout_below="@id/positiveFeedback"
+                    android:layout_alignLeft="@id/positiveFeedback"
+                    android:layout_alignStart="@id/positiveFeedback"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZCMZXCM"
+
+                    android:textSize="16sp"
+                    android:id="@+id/fee3333dbackRatingValue"
+                    android:layout_alignTop="@+id/feedbackRating"
+                    android:layout_alignLeft="@+id/positiveFeedbackValue"
+                    android:layout_alignStart="@+id/positiveFeedbackValue"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Rated"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/111topRated"
+                    android:layout_below="@id/feedbackRating"
+                    android:layout_alignLeft="@id/feedbackRating"
+                    android:layout_alignStart="@id/feedbackRating"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:text="ZCMZXCM"
+
+                    android:textSize="16sp"
+                    android:id="@+id/2222topRatedValue"
+                    android:layout_alignTop="@+id/topRated"
+                    android:layout_alignLeft="@+id/feedbackRatingValue"
+                    android:layout_alignStart="@+id/feedbackRatingValue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/333storeName"
+                    android:layout_below="@id/topRated"
+                    android:layout_alignLeft="@id/topRated"
+                    android:layout_alignStart="@id/topRated"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZCMZXCM"
+
+                    android:textSize="16sp"
+                    android:id="@+id/444storeNameValue"
+                    android:layout_alignTop="@+id/storeName"
+                    android:layout_alignLeft="@+id/topRatedValue"
+                    android:layout_alignStart="@+id/topRatedValue"/>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/999shippingInfoRelativeArray"
+                android:layout_below="@+id/basicInfoButton"
+                android:layout_marginTop="38dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:text="Shipping Type"
+                    android:id="@+id/000shippingtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp" />
+
+                <TextView
+                    android:text="ABCDDDDD"
+                    android:id="@+id/888shippingtypeValue"
+
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/shippingtype"
+                    android:layout_marginLeft="100dp"
+                    />
+
+                <TextView
+                    android:text="Handling Time"
+                    android:id="@+id/hkllandlingTime"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/shippingtype"
+                    android:layout_alignLeft="@+id/shippingtype"
+                    android:layout_alignStart="@+id/shippingtype"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+
+                    android:id="@+id/hanlkndlingTimeValue"
+                    android:text="ASDKASDJKLAS"
+
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/handlingTime"
+                    android:layout_alignLeft="@+id/shippingtypeValue"
+                    android:layout_alignStart="@+id/shippingtypeValue"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping Locations"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/shibjkppingLocation"
+                    android:layout_below="@+id/handlingTime"
+                    android:layout_alignLeft="@+id/handlingTime"
+                    android:layout_alignStart="@+id/handlingTime"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASDKASDJKLAS"
+
+                    android:textSize="16sp"
+                    android:id="@+id/ ,jbkshippingLocationValue"
+                    android:layout_alignTop="@+id/shippingLocation"
+                    android:layout_alignLeft="@+id/handlingTimeValue"
+                    android:layout_alignStart="@+id/handlingTimeValue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expedited Shipping"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/2rexpeditedShipping"
+                    android:layout_below="@+id/shippingLocation"
+                    android:layout_alignLeft="@+id/shippingLocation"
+                    android:layout_alignStart="@+id/shippingLocation"
+                    android:layout_marginTop="30dp" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+
+                    android:id="@+id/expeditedShippingValue"
+                    android:layout_alignTop="@+id/expeditedShipping"
+                    android:layout_alignLeft="@+id/shippingLocationValue"
+                    android:layout_alignStart="@+id/shippingLocationValue" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One Day Shipping"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/oq34tneDayShipping"
+                    android:layout_below="@id/expeditedShipping"
+                    android:layout_alignLeft="@id/expeditedShipping"
+                    android:layout_alignStart="@id/expeditedShipping"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:text="ZCMZXCM"
+                    android:id="@+id/oneDayq34tShippingValue"
+                    android:layout_alignTop="@+id/oneDayShipping"
+                    android:layout_alignLeft="@+id/expeditedShippingValue"
+                    android:layout_alignStart="@+id/expeditedShippingValue"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Returns Accepted"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:id="@+id/qq111reavaeturnsAccepted"
+                    android:layout_below="@id/oneDayShipping"
+                    android:layout_alignLeft="@id/oneDayShipping"
+                    android:layout_alignStart="@id/oneDayShipping"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:text="ZCMZXCM"
+                    android:id="@+id/afsr2134eturnsAcceptedValue"
+                    android:layout_alignTop="@+id/returnsAccepted"
+                    android:layout_alignLeft="@+id/oneDayShippingValue"
+                    android:layout_alignStart="@+id/oneDayShippingValue"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
